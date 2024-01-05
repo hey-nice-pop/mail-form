@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+	
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+		
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+<title>お問い合わせ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+	
+<!-- OGP -->	
+<meta property="og:title" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:site_name" content="">
+<meta property="og:description" content="">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- favicon -->	
+<link rel="icon" href="../favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+		
+<link rel="stylesheet" href="../css/reset.css" media="all">
+<link rel="stylesheet" href="../css/pc.css" media="all and (min-width: 900px)">
+<link rel="stylesheet" href="../css/phone.css" media="all and (max-width: 899px)">
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LdgRH8jAAAAABR18APOdFXvW47rm5DtKyEtWnxj"></script><!--Google raCaptcha-->	
+	
+</head>
+
+    
+    
+    
+<body>
+		
+<div id="wrapper">
+	
+    <main>
+		
+		<section class="sub_title">
+			<div class="sub_title_wrapper">
+				<h2>お問い合わせ</h2>
+			</div>
+		</section>
+		
+		
+		<section class="con_top" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true">
+		<div class="con_top_con">
+			<h3 class="con_title conicon_tel">お電話・ファックスにてお問い合わせ</h3>
+			<div class="con_top_g">
+				<div class="con_top_a">
+					<h4 class="con_top_sti">お電話でのお問い合わせ</h4>
+					<div class="con_top_tel"><a href="tel:xxxxxxxxx"><img src="../images/con_tel.svg" alt="tel xxxxxxxxx" width="312" height="33"></a></div>
+					<p class="con_top_ssp">受付／平日9：00から17：00（土日祝日定休）</p>
+				</div>
+				<div class="con_top_a">
+					<h4 class="con_top_sti">ファックスでのお問い合わせ</h4>
+					<div class="con_top_tel"><img src="../images/con_fax.svg" alt="fax 083-941-1911" width="312" height="33"></div>
+				</div>
+			</div>
+		</div><!-- con_top_con -->
+		</section><!-- con_top -->
+		
+		
+		<section class="con_form" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true">
+		<div class="con_form_con">
+			<h3 class="con_title conicon_mail">メールフォームでお問い合わせ</h3>
+			<p class="con_form_p">下記の必要事項を入力して、最後に【内容確認画面へ】ボタンを押してください。【<span class="con_red">＊</span>は必須項目】<br>※自動車保険のお問い合わせはお電話のみで承っております。</p>
+			<p class="con_form_sp">※英語・数字は全角で入力しないでください。半角カタカナは使用しないでください。</p>
+			
+			<!-- フォーム -->
+			<form method="post" action="form_check.php" id="mail_form">
+				<table>
+					<tr>
+						<th>問合せ内容<span class="con_red">＊</span></th>
+						<td>
+							<label class="con_radiocur"><input type="radio" name="naiyo" value="gyoumu" checked><span class="con_radiospace">業務について</span></label>
+							<label class="con_radiocur"><input type="radio" name="naiyo" value="saiyo"><span class="con_radiospace">採用について</span></label>
+						</td>
+					</tr>
+					<tr>
+						<th>お名前<span class="con_red">＊</span></th>
+						<td>
+							<input type="text" name="onamae" class="con_erea" required>
+						</td>
+					</tr>
+					<tr>
+						<th>フリガナ<span class="con_red">＊</span></th>
+						<td>
+							<input type="text" name="hurigana" class="con_erea" required>
+						</td>
+					</tr>
+					<tr>
+						<th>会社・団体名</th>
+						<td>
+							<input type="text" name="kaisya" class="con_erea">
+							<p class="con_erea_p">※部署名がございましたら部署名もご記入ください</p>
+						</td>
+					</tr>
+					<tr>
+						<th>郵便番号 〒</th>
+						<td>
+							<input type="text" name="postal1" class="con_postl">-
+							<input type="text" name="postal2" class="con_postr">
+							<p class="con_erea_p"><a href="https://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索はこちら</a></p>
+						</td>
+					</tr>
+					<tr>
+						<th>住所</th>
+						<td>
+							<input type="text" name="address" class="con_erea">
+						</td>
+					</tr>
+					<tr>
+						<th>電話番号<span class="con_red">＊</span></th>
+						<td>
+							<input type="text" name="tel" class="con_erea" required>
+						</td>
+					</tr>
+					<tr>
+						<th>メールアドレス<span class="con_red">＊</span></th>
+						<td>
+							<input type="text" name="email1" class="con_erea con_ereamb" required><br>
+							<input type="text" name="email2" class="con_erea" required><br>
+							<p class="con_erea_p">確認の為、再度入力してください。</p>							
+						</td>
+					</tr>
+					<tr>
+						<th>お問い合わせ<span class="con_red">＊</span></th>
+						<td>
+							<textarea type="text" name="otoiawase" rows="5" class="con_erea" required></textarea><br>
+						</td>
+					</tr>
+				</table>
+		
+				<div class="con_reading">
+					<h4>送信の前に【個人情報の取り扱いについて】を必ずお読みください。</h4>
+			
+					<div class="con_reading_a">
+						<h5>【個人情報の取り扱いについて】</h5>
+						<h6>個人情報とは</h6>
+						<p>氏名、住所、メールアドレス、電話番号その他の記述等により特定の個人を識別することができる情報をいいます。</p>
+						<h6>個人情報の収集および提供の制限</h6>
+						<p>取得した個人情報については、その目的の範囲内でのみ利用します。 個人情報を本人の同意を得ず、目的外の利用および第三者に提供しません。ただし、法令に基づく開示請求があった場合、また人の生命、身体または財産保護のために必要がある場合であって、ご本人の同意を得ることが困難な場合情報を開示させていただくことがあります。</p>
+						<h6>個人情報の管理</h6>
+						<p>収集した個人情報について、適切に管理し、個人情報の漏洩や、紛失等の防止に適切な対策を講じます。また個人情報に関する開示、訂正、削除などについてお客様が希望される場合、すみやかに対応し、保有の必要がなくなった個人情報については、確実かつ迅速に消去します。</p>
+					</div>
+				</div>			
+
+      			<label class="con_checkcur"><input name="doui" type="checkbox" required><span class="con_checkml">上記【個人情報の取り扱いについて】を読み同意しました。</span></label><br>
+ 
+				<input type="hidden" name="security" value="">
+		
+				<div class="con_button">
+					<input type="submit" value="内容確認画面へ">
+				</div>
+				
+				<input type="hidden" name="recaptchaToken" id="recaptchaToken"><!--Google raCaptcha Token-->
+			</form>
+			
+			<p class="con_recap">このサイトはreCAPTCHAによって保護されており、Googleの<a href="https://policies.google.com/privacy" target="_blank">プライバシーポリシー</a>と<a href="https://policies.google.com/terms" target="_blank">利用規約</a>が適用されます。</p>			
+		</div>
+		</section>
+
+    </main>
+	
+</div><!-- wrapper -->
+		
+<script>//Google raCaptcha送信
+document.getElementById("mail_form").addEventListener('submit', onSubmit);
+ 
+function onSubmit(e) 
+{
+	e.preventDefault();
+	grecaptcha.ready(function() 
+	{
+		grecaptcha.execute('6LdgRH8jAAAAABR18APOdFXvW47rm5DtKyEtWnxj', {action: 'submit'}).then(function(token)
+		{
+			// Add your logic to submit to your backend server here.
+			var recaptchaToken = document.getElementById('recaptchaToken');
+			recaptchaToken.value = token;
+			document.getElementById("mail_form").submit();
+		});
+	});
+}
+</script>	
+	
+	
+</body>
+</html>
